@@ -3,7 +3,7 @@ import background from "../assets/background.png"
 
 function BottomBanner() {
   return (
-    <div className='h-[600px] md:h-[581px] w-full flex items-center relative justify-center md:justify-end'>z
+    <div className='h-[600px] md:h-[581px] w-full flex items-center relative justify-center md:justify-end'>
         <img src={background} alt="" className='w-full h-full object-cover'/>
         <div className=" w-full md:w-[45%]  absolute flex flex-col gap-12 p-10 md:p-20">
             <h1 className='font-bold text-[30px] md:text-[40px] text-left md:text-right gabarito text-white'>Upgrade Your Shelves: Deliver Quality Customers are Looking For</h1>
