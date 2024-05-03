@@ -25,12 +25,12 @@ const banners = [
 
 function QualityBanner() {
   return (
-    <div className='w-full h-full flex flex-col items-center bg-[#FFFFE7] py-20 '>
-        <div className=' gabarito w-[90%]  block md:flex justify-between items-center gap-20 '>
+    <div className='w-full h-full flex flex-col items-center bg-[#FFFFE7] px-5 md:px-0 py-10 md:py-20 '>
+        <div className=' gabarito w-full md:w-[90%]  block md:flex justify-between items-center gap-20 '>
 
            { banners.map((banner,index)=>(
             <div className={`w-full flex items-baseline mt-6 md:mt-0 justify-center ${index>0?'md:justify-end':''}`}>
-                <div key={index} className="flex gap-6 items-center justify-center w-[90%]">
+                <div key={index} className={`flex md:gap-6 items-center justify-center w-[90%] ${index>1?'gap-4 ':'gap-6'}`}>
                     <div className=''>
                         <img src={banner.img} alt="" className='md:w-[100px] md:h-[100px]' />
                     </div>

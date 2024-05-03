@@ -6,9 +6,9 @@ import rightleaf from "../assets/right-leaf.png"
 
 function WhyChoose() {
   return (
-    <div className='flex  w-full py-20 bg-[#FFF4BA] items-center justify-center'>
-     <div className='w-[90%] flex md:flex-row flex-col md:gap-0 gap-8 justify-between items-center '>
-        <div className='w-[45%] flex flex-col gap-12 md:order-1 order-2 '>
+    <div className='flex  w-full py-10 md:py-20 bg-[#FFF4BA] items-center justify-center'>
+     <div className='w-[90%] h-full flex md:flex-row flex-col md:gap-0 gap-12 justify-between items-center '>
+        <div className=' w-full md:w-[45%] flex flex-col gap-12 md:order-1 order-2 '>
             <h1 className="gabarito font-bold text-[32px] ">
                 Why Choose Mahimy Bread?
             </h1>
@@ -54,7 +54,7 @@ function WhyChoose() {
             </div>
 
         </div>
-        <div className=" h-[425px] w-[300px] md:w-[567px] md:order-2 order-1 ">
+        <div className="h-full md:h-[425px] w-[300px] md:w-[567px] md:order-2 order-1 ">
             <img src={Mask} alt="" />
         </div>
      </div>

@@ -12,7 +12,7 @@ function HeroSection() {
         <div className=' flex flex-col absolute top-[20%] left-[20%] md:left-[10%] lg:left-[5%]  w-[50%] h-[40%] md:h-[50%] lg:h-[70%]'>
             <div className=" h-[80%] w-[70%] ml-7">
                 <h1 className="italianno-regular text-[70px] md:text-[100px] lg:text-[142px] relative  text-[#A4CF25] ">Freshness</h1>
-                <p className='gideon-roman-regular text-[50px] md:text-[60px] lg:text-[84px] absolute text-white top-[16%] md:top-[18%] lg:top-[20%] left-[16%] md:left-[15%] '>meets</p>
+                <p className='gideon-roman-regular text-[50px] md:text-[60px] lg:text-[84px] absolute text-white top-[20%] md:top-[18%] lg:top-[20%] left-[16%] md:left-[15%] '>meets</p>
                 <p className='gabarito text-[60px] md:text-[100px] lg:text-[100px] absolute  top:[15%] md:top-[25%] lg:top-[35%] text-white left-[8%] '>delight</p>
             </div>
             <div className='w-[100%] flex justify-start p  '>
