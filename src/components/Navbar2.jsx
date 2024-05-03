@@ -5,14 +5,18 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import "../App.css";
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar2 = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [contactModal, setContactModal] = useState(false);
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  const handleSubmit=()=>{
+   navigate('/contact')
+  }
 
   return (
     <div className=" font-Gabarito fixed top-0 bg-[#221609] w-[100vw] flex justify-between items-center px-4 md:px-[48px] py-6   md:text-[18px] z-20">
@@ -24,8 +28,8 @@ export const Navbar2 = () => {
         
         <Link to="/" className="hover:text-gray-300">About Us</Link>
         <Link to="" className="hover:text-gray-300">Where to Buy</Link>
-        <button className="bg-[#A4CF25] text-white p-2 md:px-4 rounded-lg w-[137px] h-[46px]">
-          <Link to="/contact" className="text-black">Contact Us</Link>
+        <button onClick={handleSubmit} className="bg-[#A4CF25] text-black p-2 md:px-4 rounded-lg w-[137px] h-[46px]">
+          Contact Us
         </button>
       </div>
       <div className="md:hidden flex items-center justify-between">
@@ -42,13 +46,13 @@ export const Navbar2 = () => {
         )}
       </div>
       {showMenu && (
-        <div className="  md:hidden fixed top-0 left-0 w-[85vw] h-[100%]  backdrop-blur-[0.8rem] flex flex-col gap-10 py-10 items-end pr-12  bg-gradient-to-l from-[#fe9d74] to-[#221609] text-white z-[50] font-semibold text-[24px] ">
+        <div className="  md:hidden fixed top-0 left-0 w-[85vw] h-[100%]  backdrop-blur-[0.8rem] flex flex-col gap-10 py-10 items-end pr-12  bg-gradient-to-l from-[#230c02] to-[#221609] text-white z-[50] font-semibold text-[24px] ">
           <X className=" text-2xl cursor-pointer " onClick={toggleMenu} />
           <Link to="/" onClick={toggleMenu} className="hover:text-gray-300">About Us</Link>
           <Link to="" onClick={toggleMenu} className="hover:text-gray-300">Where to Buy</Link>
-          <button onClick={toggleMenu} className="bg-black text-white p-2  md:px-4 rounded-lg w-[137px] h-[46px]">
-          <Link to="/contact" className="hover:text-black">Contact Us</Link>
-          </button>
+         
+          <Link to="/contact" onClick={toggleMenu}className="hover:text-gray-300">Contact Us</Link>
+          
           
         </div>
       )}
